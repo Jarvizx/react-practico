@@ -14,6 +14,8 @@ import NotFound from '@pages/NotFound';
 import AppContext from '../context/AppContext';
 import useInitialState from '../hooks/useInitialState';
 import '@styles/global.css';
+import About from '../containers/About';
+import Highlight from '../containers/Highlight';
 
 const App = () => {
 	const initialState = useInitialState();
@@ -23,15 +25,8 @@ const App = () => {
 				<Layout>
 					<Switch>
 						<Route exact path="/" component={Home} />
-						<Route exact path="/login" component={Login} />
-						<Route exact path="/password-recovery" component={PasswordRecovery} />
-						<Route exact path="/send-email" component={SendEmail} />
-						<Route exact path="/new-password" component={NewPassword} />
-						<Route exact path="/account" component={MyAccount} />
-						<Route exact path="/signup" component={CreateAccount} />
-						<Route exact path="/checkout" component={Checkout} />
-						<Route exact path="/orders" component={Orders} />
-						<Route path="*" component={NotFound} />
+						<Route exact path="/que-es-esto" component={About} />
+						<Route exact path="/destacados" component={Highlight} />
 					</Switch>
 				</Layout>
 			</BrowserRouter>

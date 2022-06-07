@@ -1,10 +1,10 @@
 import React from 'react';
-import ProductList from '@containers/ProductList';
+import AlphabetList from '../containers/AlphabetList';
 
 const Home = () => {
 	return (
 		<>
-			<ProductList />
+			<AlphabetList />
 		</>
 	);
 }
