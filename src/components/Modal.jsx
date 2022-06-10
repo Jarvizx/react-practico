@@ -33,7 +33,7 @@ const Modal = ({ show, hide, type }) => {
                 )}
                 {type == 'no-result' && (
                     <>
-                        <p>
+                        <p className='alphabet-no-result'>
                             !Lo sentimos¡ no tenemos esa palabra en nuestro glosario pero te invitamos a que la consultes con expertos o con tus mismos colegas. Una vez tengas claro el significado, puedes agregarlo a nuestra colección de palabras digitales. ¡Construyamos juntos!
                         </p>
                     </>
