@@ -1,5 +1,5 @@
 {
-  "name": "react-shop",
+  "name": "coleccion-de-palabras",
   "version": "1.0.0",
   "description": "Colección de palabras digitales",
   "main": "src/index.js",
@@ -12,7 +12,7 @@
     "react",
     "javascript"
   ],
-  "author": "Oscar Barajas <oscar@platzi.com>",
+  "author": "Johanna Rodriguez <johpue@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "@babel/core": "^7.15.0",
@@ -24,6 +24,7 @@
     "html-loader": "^2.1.2",
     "html-webpack-plugin": "^5.3.2",
     "react": "^17.0.2",
+    "react-beautiful-dnd": "^13.1.0",
     "react-dom": "^17.0.2",
     "react-icons": "^4.4.0",
     "react-router-dom": "^5.2.0",
