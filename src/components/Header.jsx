@@ -4,11 +4,6 @@ import { FaStar } from 'react-icons/fa';
 import { NavLink } from "react-router-dom";
 
 const Header = () => {
-	const [toggle, setToggle] = useState(false);
-
-	const handleToggle = () => {
-		setToggle(!toggle);
-	}
 
 	return (
 		<nav>

@@ -1,60 +1,23 @@
 import React, { useState, useContext } from 'react';
-import { useEffect } from 'react';
 import { DragDropContext, Droppable, Draggable } from "react-beautiful-dnd";
 import AppContext from '../context/AppContext';
 import { FaArrowsAlt } from 'react-icons/fa';
 import '@styles/DndWords.scss';
 
-
-const initialTasks = [
-    {
-        id: "1",
-        text: "React.js",
-    },
-    {
-        id: "2",
-        text: "HTML/CSS",
-    },
-    {
-        id: "3",
-        text: "AWS",
-    },
-    {
-        id: "4",
-        text: "JavaScript",
-    },
-    {
-        id: "5",
-        text: "PHP",
-    },
-    {
-        id: "6",
-        text: "Python",
-    },
-];
-
 const Dnd = () => {
-    const [tasks, setTasks] = useState(initialTasks);
     const { alphabet } = useContext(AppContext);
-	const { letters, def } = alphabet;
+	const { def } = alphabet;
 
     let listWords = [];
-        def.splice(0,4).forEach((v,k) => {
-            
-            listWords.push({
-                id: (k+1).toString(),
-                word: v.word,
-                definition: v.definition
-            })
-        });
+    let definitions = [...def];
+    definitions.splice(0,4).forEach((v,k) => {
+        listWords.push({
+            id: (k+1).toString(),
+            word: v.word,
+            definition: v.definition
+        })
+    });
     const [words, setWords] = useState(listWords);
-
-
-    useEffect(() => {
-        console.log('w-->', words)
-        console.log('t-->', tasks)
-
-    }, [words])
 
     const reorder = (list, startIndex, endIndex) => {
         const result = [...list];
@@ -63,7 +26,6 @@ const Dnd = () => {
 
         return result;
     };
-
     
     return (
         <DragDropContext

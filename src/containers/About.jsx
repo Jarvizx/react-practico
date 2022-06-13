@@ -1,7 +1,7 @@
 import React from 'react';
 import '@styles/AlphabetList.scss';
 import { FaCaretLeft } from 'react-icons/fa';
-import { NavLink, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const About = () => {
     return (
