@@ -30,7 +30,7 @@ const initialState = {
 		"Z"
 	],
 	def: [
-		{word:'Avatar', definition:'Representación gráfica que, en el ámbito de internet y las nuevas tecnologías de la comunicación, se asocia a un usuario para su identificación en el mundo virtual. Los avatares pueden ser fotografías, dibujos o, incluso, representaciones tridimensionales. Como tal, se pueden ver avatares en videojuegos, juegos de rol, foros de discusión, mensajería instantánea y plataformas de interacción como Twitter. Ya en los años 80 este nombre era utilizado en un juego de ordenador.'},
+		{word:'Avatar', definition:'Representación gráfica que, en el ámbito de internet y las nuevas tecnologías de la comunicación, se asocia a un usuario para su identificación en el mundo virtual. Los avatares pueden ser fotografías, dibujos o, incluso, representaciones tridimensionales. Como tal, se pueden ver avatares en videojuegos, juegos de rol, foros de discusión, mensajería instantánea y plataformas de interacción como Twitter.'},
 		{word:'Blog', definition:'Un blog es un sitio web que permite la creación y difusión de contenido, en  la mayoría de los casos, sobre un tema específico y en el que se comparten conocimientos y opiniones de forma regular.'},
 		{word:'Blogger', definition:'Un blogger o bloguero es una persona que tiene un blog y crea contenido de forma regular, bien sea sobre un tema de interés público o privado, y cuyo fin puede ser comercial o personal.'},
 		{word:'Buffer', definition:'Memoria de almacenamiento temporal de información que permite transferir los datos entre unidades funcionales con características de transferencia diferentes.'},

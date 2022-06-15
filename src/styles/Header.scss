@@ -9,11 +9,14 @@ nav {
 		.header-title {
 			width: 24.375%;
 			height: 48px;
+			
+			a {
+				text-decoration: none;
+			}
 			h2{
 				margin-left: map-get($map: $tokens, $key: 's56');
-				font-family: Arial, Helvetica, sans-serif;
 				font-size: 36px;
-				font-weight: 100;
+				font-weight: 500;
 				color: #F2F2F2;
 			}
 		}
@@ -60,7 +63,7 @@ nav {
 	display: flex;
 	text-decoration: underline;
 	color: #ffffff;
-	padding: 0 2.3rem;
+	padding: 0 2.0rem;
     height: 48px;
     align-items: center;
 }

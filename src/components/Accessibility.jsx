@@ -21,15 +21,15 @@ const Accessibility = () => {
                             <GoTextSize />
                         </li>
                         <li className='tooltip-alphabet hearing'>
-                            <TooltipAlphabet text={'Ampliar tamaño de letra'} />
+                            <TooltipAlphabet text={'Escuchar el texto'} />
                             <MdHearing />
                         </li>
                         <li className='tooltip-alphabet contrast'>
-                            <TooltipAlphabet text={'Ampliar tamaño de letra'} />
+                            <TooltipAlphabet text={'Mejorar contraste de la pagina'} />
                             <ImContrast />
                         </li>
                         <li className='tooltip-alphabet brightness'>
-                            <TooltipAlphabet text={'Ampliar tamaño de letra'} />
+                            <TooltipAlphabet text={'Ajustar el brillo de la pantalla'} />
                             <ImSun />
                         </li>
                     </ul>
