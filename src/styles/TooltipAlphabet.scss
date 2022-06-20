@@ -1,7 +1,6 @@
 .tooltip-alphabet {
     position: relative;
     display: inline-block;
-    border-bottom: 1px dotted #F2CF63;
   }
   
   .tooltip-alphabet .tooltip-text {
@@ -21,6 +20,11 @@
     box-shadow: 3px 3px 10px 1px grey;
     width: max-content;
   }
+
+  .tooltip-alphabet .tooltip--right.tooltip-text {
+    left: 3rem;
+    top: -0.5rem;
+  }
   
   .tooltip-alphabet .tooltip-text::after {
     content: "";
@@ -32,6 +36,13 @@
     border-style: solid;
     border-color: transparent transparent transparent #F2CF63;
   }
+
+  .tooltip-alphabet .tooltip--right.tooltip-text::after {
+    border-color: transparent #F2CF63 transparent transparent;
+    right: 100%;
+    left: unset;
+  }
+
   .tooltip-alphabet:hover .tooltip-text {
     visibility: visible;
   }

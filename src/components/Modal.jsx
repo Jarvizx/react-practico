@@ -1,7 +1,25 @@
 import React, { useEffect, useRef } from 'react';
 import '@styles/Modal.scss';
+import { useState } from 'react';
 
-const Modal = ({ show, hide, type }) => {
+const Modal = ({ show, hide, type, addNewWord }) => {
+    
+	const [newWord, setNewWord] = useState('');
+    const [newDefinition, setNewDefinition] = useState('');
+
+    const handlerNewWord = (event) => {
+        setNewWord(event.currentTarget.value.toLowerCase())
+    }
+
+    const handlerAddNewWord = () => {
+        let newWordObject = {
+            word: newWord,
+            definition: newDefinition
+        }
+        addNewWord(newWordObject);
+        hide(false)
+    }
+ 
     const modalContent = useRef(null)
     useEffect(() => {
         const handlerClickOutside = (event) => {
@@ -22,13 +40,13 @@ const Modal = ({ show, hide, type }) => {
                 {type == 'add-word' && (
                     <>
                         <div className='alphabet-box-input'>
-                            <input type="text" placeholder='Escribe una palabra o concepto nuevo' />
+                            <input type="text" placeholder='Escribe una palabra o concepto nuevo' value={newWord} onChange={(e)=>handlerNewWord(e)} />
                         </div>
                         <div className='alphabet-box-input'>
-                            <textarea rows="6" placeholder='Escribe el significado de esa palabra o concepto nuevo. También puedes añadir algunos ejemplos.'>
+                            <textarea rows="6" defaultValue={newDefinition} onChange={(e)=>setNewDefinition(e.currentTarget.value)} placeholder='Escribe el significado de esa palabra o concepto nuevo. También puedes añadir algunos ejemplos.'>
                             </textarea>
                         </div>
-                        <button className='add-word'>Agregar Palabra</button>
+                        <button className='add-word' onClick={()=>handlerAddNewWord()}>Agregar Palabra</button>
                     </>
                 )}
                 {type == 'no-result' && (

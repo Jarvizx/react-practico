@@ -16,7 +16,7 @@ nav {
 			h2{
 				margin-left: map-get($map: $tokens, $key: 's56');
 				font-size: 36px;
-				font-weight: 500;
+				font-weight: 800;
 				color: #F2F2F2;
 			}
 		}
@@ -66,6 +66,7 @@ nav {
 	padding: 0 2.0rem;
     height: 48px;
     align-items: center;
+	font-size: 20px;
 }
 .navbar-right ul li a svg {
 	margin-right: .5rem;

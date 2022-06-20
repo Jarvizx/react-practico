@@ -66,6 +66,7 @@
     		align-items: center;
 			font-size: 24px;
 			color:#67696F;
+			text-transform: uppercase;
 			cursor: pointer;
 			&:hover{
 				background-color: $color-Citron-A1A;
@@ -98,6 +99,7 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		text-transform: uppercase;
 	}
 	&-container {
 		width: 1100px;
@@ -118,9 +120,12 @@
 		position: relative;
 		text-align: right;
 		h4 {
-			font-size: 72px;
-			margin-right: map-get($map: $tokens, $key: 's40');
+			font-size: 60px;
+			margin-right: map-get($map: $tokens, $key: 's16');
 			font-weight: 100;
+			&::first-letter {
+				text-transform: uppercase;
+			}
 		}
 	}
 	&-add-highlight {
@@ -142,7 +147,7 @@
 		width: 50%;
 		padding: map-get($map: $tokens, $key: 's32');
 		line-height: 1.4;
-		font-size: 22px;
+		font-size: 18px;
 	}
 
 	&-search {
@@ -154,8 +159,26 @@
 		align-items: center;
 		padding-left: map-get($map: $tokens, $key: 's32');
 		padding-right: map-get($map: $tokens, $key: 's16');
+		position: relative;
 		input {
-			width: 30% !important;
+			width: 50% !important;
+		}
+		&-results {
+			list-style: none;
+			position: absolute;
+			top: 100%;
+			margin: 0;
+			padding: 0.5rem 2rem;
+			background: #f0f0e3ef;
+			width: 50%;
+			border: 2px solid #A1A608;
+			left: -2px;
+			li {
+				cursor: pointer;
+				&:hover {
+					font-size: 25px;
+				}
+			}
 		}
 	}
 

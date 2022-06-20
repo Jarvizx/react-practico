@@ -3,7 +3,7 @@ import '@styles/Accessibility.scss';
 import { FaCog } from 'react-icons/fa';
 import { ImSun, ImContrast } from "react-icons/im";
 import { GoTextSize } from "react-icons/go";
-import { MdHearing  } from "react-icons/md";
+import { MdHearing } from "react-icons/md";
 import TooltipAlphabet from './TooltipAlphabet';
 
 const Accessibility = () => {
